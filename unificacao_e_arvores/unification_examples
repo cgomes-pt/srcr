@@ -1,0 +1,11 @@
+pao = pao , true 
+'Pao' = pao , false 
+'pao' = pao , true 
+Pao = pao , true 
+pao = molho , false 
+comidao(pao) = pao , false 
+comida(pao) = X , true 
+comida(X) = comida(pao) , true
+comida(pao,X) = comida(Y, molho) , true 
+comida(pao,X,cerveja) = comida(Y,molho,X) , false
+refeicao(comida(pao),bebida(cerveja)) = refeicao(X,Y) , true 

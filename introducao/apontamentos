@@ -1,0 +1,94 @@
+Programing in prolog is providing rules that allow to infer facts about the world
+
+##### Term: #####
+
+	- A constant which can be atom or number;
+	- A variable;
+	- A complex term;
+
+
+##### Atoms: #####
+
+	- A sequence of characters of upper-case letters, lower-case letters, digits, or 
+under score starting with a lowercase letter
+		example: filho, somaNumeros, jogar
+
+	- An arbitrary sequence of characters enclosed in single quotes
+		example: 'Miguel', 'Abraços', '$$;!!'
+	
+	- A sequence of special characters 
+		example: :,;.:-
+
+##### Variables: #####
+
+	- A sequence of characters of upper-case letters, etc, starting with either 
+an uppercase letter or an underscore 
+		example: X,Y, Variable, Ana, _tag
+	- underscore (_) represents a unknown variable 
+
+
+##### Complex Terms #####
+ 
+	- Atoms, numbers and variables are building blocks for complex terms
+	
+	- Complex terms are built of a functor directly followed by a sequence 
+of arguments:
+		- Arguments are put in round brackets, separated by comas;
+		- The functor must be an atom;
+		
+	- example: 
+		- toca_piano(joana).
+		- gosta(mario,ana).
+		- inveja(miguel,mario).
+
+	- Complex terms inside complex terms:
+		- relacao(X(pai(pai(pai(rui)))))
+
+##### Arity #####
+
+	- The number of arguments a complex term has is called its arity
+		examples: mulher(sara) arity 1
+			  gosta(vicente,sara) arity 2
+			  pai(pai(rui)) arity 1
+
+
+feliz(paula). -> fact
+tocaGuitarra(paula):-ouveMusica(paula). -> rule 
+
+
+##### Clauses #####
+feliz(paula).
+ouveMusica(marco).
+ouveMusica(paulo):-feliz(paula).
+tocaGuitarra(marco):-ouveMusica(marco).
+tocaGuitarra(paula):-ouveMusica(paula).
+
+5 clauses, 2 facts and 3 rules
+
+##### Predicates #####
+(same example)
+
+3 predicates: feliz, ouveMusica, tocaGuitarra
+
+##### Expressing Conjunction #####
+
+feliz(bruno).
+ouveMusica(miguel).
+tocaGuitarra(bruno):-ouveMusica(bruno), feliz(bruno)
+tocaGuitarra(miguel):-feliz(miguel).
+tocaGuitarra(miguel):-ouveMusica(miguel).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

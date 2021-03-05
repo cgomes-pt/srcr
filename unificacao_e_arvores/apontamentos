@@ -1,0 +1,34 @@
+When Prolog unifies mulher(X) with mulher(ana), it is instantiating the variable X with the atom ana
+
+
+#### Unification ####
+
+Two terms unify if:
+	- they are the same term
+	- If they contain variables that can be uniformly instantiated with terms in such a way that the resulting terms are equal 
+
+	examples:
+		- ana and ana unify
+		- 42 and 42 unify 
+		- mulher(ana) and mulher(ana) unify
+		- mulher(ana) and mulher(berta) do not unify
+		- bruno and ana do not unify 
+		- ana and X, they unify, X is instantiated to ana 
+		- mulher(Z) and mulher(ana), Z is instantiated to ana
+		- gosta(ana,X) and gosta(Y,miguel), X is instantiated to Miguel and ana to Y
+
+
+#### Instantiations ####
+
+When Prolog unifies 2 terms, it performs all the necessary instantiations so that the trms are equal 
+
+
+#### Prolog testes ####
+
+
+X=ana, X=bruno = False ; X is already instantiated with ana, it cant unify it with bruno anymore.
+
+k(s(g),Y) = k(X,t(k)) = True ; X is instantiated with s(g) and Y is instantiated with t(k)
+
+
+
