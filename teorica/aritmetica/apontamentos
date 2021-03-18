@@ -1,0 +1,14 @@
+example:
+	5 is 2+3.
+	12 is 3*4.
+	1 is mod(7,2).
+	R is mod(7,2). (R=1)
+	X is 3*4. (X=12)
+
+
+len([a,b,c],X).
+X=7
+
+
+acclen([a,b,c],0,Len).
+Len=3 

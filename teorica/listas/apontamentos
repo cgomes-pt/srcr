@@ -1,0 +1,64 @@
+## Operator | can be used to decompose a list into its head and tail ##
+
+	example:
+		[Head | Tail] = [ana, julia, miguel, patricia].
+			Head = ana
+			Tail = [julia,miguel,patricia]
+			
+
+		[X,Y] = [ana, julia, miguel, patricia].
+			X = ana
+			Y = [julia, miguel, patricia]
+		
+[X,Y|Tail] = [[],feliz(z),[2,[b,c]], [], Z, [2,[b,c]]]
+			X = []
+			Y = feliz(z)
+			Tail = o resto 
+
+		[_,X2,_,X4] = [mara, ana, julia, joana, marco]
+			X2 = ana
+			X4 = joana 
+
+
+## member ## 
+
+Given a term X and a list L, tell us whether or not X belongs to L
+
+	example:
+		member(ana, [joana,tania,ana,julia]).
+		yes
+
+		member(marco, [joana,tania,ana,julia]).
+		no
+
+		member[X, [ana, marco, paulo, julia]).
+		X = ana;
+
+		
+## a2b ##
+
+Takes two lists as arguments and succeeds:
+- if the first argument is a list of a's and 
+- the second argument is a list of b's of same length 
+
+	example:
+		a2b([a,a,a,a],[b,b,b,b]).
+		yes
+
+		a2b([a,a,a,a],[b,b,b,b]).
+		no
+
+		a2b([a,c,a,a],[b,b,b,t]).
+		no
+
+## append ##
+
+## prefix ##
+
+## sufix ## 
+
+## sublist ## 
+
+## reverse ## 
+
+
